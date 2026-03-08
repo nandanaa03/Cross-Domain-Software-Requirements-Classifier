@@ -1,0 +1,24 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# NLTK data
+nltk_data/
+
+# VS Code
+.vscode/
+
+# Results
+results/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+bert_output/
+bert_fewshot_output_*/
+__pycache__/
+*.pyc

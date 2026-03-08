@@ -1,0 +1,26 @@
+﻿# Core
+numpy==1.26.4
+pandas==2.3.3
+
+# Classical ML
+scikit-learn==1.8.0
+scipy==1.16.3
+joblib==1.5.3
+
+# NLP
+nltk==3.9.2
+regex==2025.11.3
+sentence-transformers==2.7.0
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Utilities
+tqdm==4.67.1
+
+# Deep Learning (BERT)
+torch==2.3.1
+transformers==4.46.2
+datasets==2.21.0
+accelerate==1.12.0
