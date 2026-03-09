@@ -174,3 +174,30 @@ pure_macro_f1 = f1_score(y_pure, pure_preds, average="macro")
 print("\nPURE Macro F1:", round(pure_macro_f1, 4))
 print("\nClassification Report on PURE:")
 print(classification_report(y_pure, pure_preds))
+
+# ==============================
+# SAVE RESULTS
+# ==============================
+import os
+import json
+
+os.makedirs("results", exist_ok=True)
+
+results_data = {
+    "experiment": "Hyperparameter Optimization (GridSearchCV)",
+    "train": "PROMISE",
+    "best_svm_params": svm_grid.best_params_,
+    "best_svm_macro_f1": round(svm_f1, 3),
+    "best_logistic_params": log_grid.best_params_,
+    "best_logistic_macro_f1": round(log_f1, 3),
+    "cross_domain_macro_f1": round(pure_macro_f1, 3),
+    "cross_domain_report": classification_report(
+        y_pure, pure_preds,
+        output_dict=True
+    )
+}
+
+with open("results/optimize_models_results.json", "w") as f:
+    json.dump(results_data, f, indent=4)
+
+print("\nResults saved to results/optimize_models_results.json")

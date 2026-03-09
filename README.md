@@ -38,7 +38,7 @@ The label distribution literally flips between datasets. That's the core challen
 |-------|----------|
 | TF-IDF + SVM | 0.187 |
 | SBERT + SVM | 0.282 |
-| Fine-tuned BERT | 0.228 |
+| Fine-tuned BERT | 0.267 |
 
 **SBERT few-shot domain adaptation:**
 
