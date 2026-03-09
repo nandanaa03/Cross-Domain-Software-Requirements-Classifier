@@ -60,7 +60,7 @@ The label distribution literally flips between datasets. That's the core challen
 | 100 | 0.587 |
 | 500 | 0.773 |
 
-Key observation: Fine-tuned BERT outperforms SBERT under few-shot conditions, reaching Macro F1 of 0.773 at 500 samples compared to SBERT's 0.654. However all models suffer severe degradation without any target-domain samples.
+Key observation: Fine-tuned BERT outperforms SBERT under few-shot conditions, reaching Macro F1 of 0.773 at 500 samples compared to SBERT's 0.655. However all models suffer severe degradation without any target-domain samples.
 
 ---
 
