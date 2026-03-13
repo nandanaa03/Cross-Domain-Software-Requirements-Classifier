@@ -71,9 +71,6 @@ axes[1].set_title('PURE Dataset\n(11,440 requirements)', fontsize=13, pad=15)
 fig.suptitle('Label Distribution Comparison\nPROMISE vs PURE',
              fontsize=14, fontweight='bold', y=1.02)
 
-fig.text(0.5, 0.02,
-         'Majority class completely reverses between datasets — worst-case domain shift',
-         ha='center', fontsize=10, color='#b71c1c', style='italic')
 
 plt.tight_layout()
 plt.savefig('label_distribution.png', dpi=150, bbox_inches='tight')
